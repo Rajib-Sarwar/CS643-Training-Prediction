@@ -29,10 +29,9 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
 
 Step 4: Connect to the Instance
 Now, perform a pull down from the GitHub repository:
-$ git clone https://github.com/Ramachetan/CS-643-PA-2
+$ git clone https://github.com/Rajib-Sarwar/CS643-Training-Prediction
 Navigate to the Directory:
 $ cd CS643-AWS-ProgAssgn-2
-
 
 
 Step 5: Connect Master nodes to Slave nodes
@@ -148,15 +147,15 @@ $ docker login
 2.	Navigate to the folder containing the Docker file. This folder should also contain the model, Prediction.py, and the dataset to be used for prediction.
 $ cd /home/ubuntu/ CS-643-PA-2/
 3.	Build this docker image with:
-$ docker build -t ramachetan22/cs643-progassgn-2 .
+$ docker build -t chowdhuryrajib02/cs643-progassgn-2 .
 4.	Verify the docker image has been created after it has been built
 $ docker images
 5.	Run this image build with:
-$ docker run -v /app/:/data ramachetan22/cs643-progassgn-2:latest
+$ docker run -v /app/:/data chowdhuryrajib02/cs643-progassgn-2:latest
 6.	After running the Predictions with Docker, here is the output result received from the code:
 
 F1 Score for our Model: 0.8730216734867262
 
 7.	Push this image to Docker Hub with:
-$ docker push ramachetan22/cs643-progassgn-2:latest
+$ docker push chowdhuryrajib02/cs643-progassgn-2:latest
 Find that on Docker Hub.
